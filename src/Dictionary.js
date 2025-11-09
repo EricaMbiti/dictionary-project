@@ -1,16 +1,21 @@
 import React,{useState} from "react";
 import axios from "axios";
+import Results from './Results';
 import './Dictionary.css';
 
 
 
 export default function Dictionary(){
 
-let [keyword,setKeyword]=useState("");//using states because input has got to be updated 
-
+let [keyword,setKeyword]=useState("");//state for the word
+let [results,setResults]=useState(null);//state for the definition,antonyms etc.....
 
 function handleResponse(response){
-console.log(response.data);
+    console.log(response.data[0]);
+console.log(response.data);//log to see all the array or object info
+//console.log(response.data.meanings[0].definition);***used it to see how i can get the exact definition
+
+setResults(response.data);
 
 }
 
@@ -41,6 +46,8 @@ return (
 
 
     </form>
+
+    <Results results={results}/> 
     </div>
 )
 
