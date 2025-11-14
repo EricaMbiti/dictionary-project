@@ -3,7 +3,7 @@ import Meaning from "./Meaning";
 import "./Results.css";
 export default function Results(props){
     //We are looping through each meaning and then sending it to the Meaning component
-    console.log(props.results);
+    
 if(props.results){
 return(
 <div className="Results">
