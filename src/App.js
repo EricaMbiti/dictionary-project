@@ -15,7 +15,10 @@ function App() {
 
 <footer className="App-footer">
   <small>
-  <em>Coded by <strong> Erica Mbiti </strong>  and hosted on </em><a href="https://dictionary-app-erica.netlify.app/">
+  <em>This project was coded by <strong> Erica Mbiti </strong> and is {" " } 
+    <a href="https://github.com/EricaMbiti/dictionary-project">
+    open sourced on github </a> and hosted on </em>
+    <a href="https://dictionary-app-erica.netlify.app/">
     Netifly
   </a>
   </small>
